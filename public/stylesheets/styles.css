@@ -1,0 +1,179 @@
+/*STYLES HACKED FROM BOOTSTRAP */
+h1{
+      font-family: Pacifico;
+      font-size: 50px;
+      margin-bottom: -25px;
+      padding-top: 20px;
+}
+h2{
+  font-family: Pacifico;
+}
+
+ p{
+    font-family: 'PT Sans', sans-serif;  
+}
+/*Interaction on buttons*/
+
+td > img:hover {
+    transform: rotate(20deg);
+}
+
+button {
+  text-align: center;
+  display: inline-block;
+  background-color: #f19132;
+  width: 60px;
+  height: 50px;
+  border-radius: 15%;
+  border-style: none; 
+}
+button:hover{
+  background-color: #00e5e5;
+}
+
+/*Div buttons*/     
+    .action{
+      width: 100%;
+      height: 100px;
+      min-width: 600px;
+      margin-top:20px;
+      text-align: center;
+    }
+    .action div{
+      display: inline-block;
+      position: relative;
+      padding: 20px;
+      border: 4px solid black;
+      border-radius: 15%;
+      width: 150px;
+      height: 125px;
+      vertical-align: top;
+      font-family: 'PT Sans', sans-serif; 
+    }
+    .action div::after{
+      width:100%;
+      display:inline-block;
+      font:0;
+    }
+    .action div:hover{
+      background-color: #00e5e5;
+    }
+/* Nav bar stuff */
+
+    nav{
+      width:100%;
+      height:35px;
+      text-align: center;
+    }
+    .nav{
+      padding-left: 5px;
+      margin-bottom: 0;
+      padding-top: 8px;
+      list-style: none;
+      font-family: 'PT Sans', sans-serif;
+    }
+    .nav > li{
+      position: relative;
+      display: inline;
+      padding: 20px;
+      background-color: #f19132;
+      border-radius: 15%;
+      padding: 30px 20px;
+      width:;
+    }
+    .nav > li:hover{
+      background-color:#00e5e5;
+    }
+
+/*Buttons  */ 
+
+
+/* Rows cols and containers */ 
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 680px;
+  text-align: center;
+}
+.row {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+  float: left;
+}
+.col-xs-12 {
+  width: 100%;
+}
+
+
+/* Other bs styling */
+
+body {
+  margin: 15;
+}
+
+article,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+h1 {
+  margin: .67em 0;
+  font-size: 3em;
+}
+img {
+  border: 0;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+.glyphicon-tree-deciduous:before {
+  content: "\e200";
+}
+html {
+  font-size: 17px;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+img {
+  vertical-align: middle;
+}
+
+
+
+
+

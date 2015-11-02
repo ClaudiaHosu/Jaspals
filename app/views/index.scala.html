@@ -1,14 +1,86 @@
-@()
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+  	<meta charset="utf-8">
+  	<title>Jaspal's Voice</title>
+  	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link href="assets/css/styles.css" type="text/css" rel="stylesheet">
+  </head> 
+  <body>
+    <div class="container">
+      <section class="container-fluid">
+        
+      <!--navigation--> 
+        <nav>
+      	  <ul class="nav">
+      	  	<li><img src="@routes.Assets.at("images/rubiks_cube.png")" style="height:50px;"></li>
+      	  	<li>Mission</li>
+      	  	<li>Products</li>
+      	  	<li>Contact</li>
+      	  	<li>Volunteer</li>
+      	  	<li>Donate</li>
+      	  </ul>
+        </nav>
+    	
+    	  <!--Introduction--> 
+    	  <div class="row group"> 
+    	  	<h1>Jaspal's voice</h1>
+    	  	<p>One of the hardest things about Motor Neurone Disease is losing your voice. </p>
+    	  	<p>When Susan's sister Jaspal contracted MND and was struggling to talk or type on a normal phone, a 10-year-old Nokia phone with an 8 button keypad proved a suprising but effective way for the two sisters to communicate.</p>
+    	  	<p>From high-tech to the very low, these are some of the products that can restore that precious thing to a person, their voice.</p>
+    	  	<button>
+            MORE
+          </button>
+    	  </div>
+    	  <!--Product horizontal parallax-->
+    	  <div class="row group"> 
+    	   <div class="slider">
+         </div>
+    	  </div>
+    	  
+    	  <!--Mission--> 
+    	  <div class="row group">
+    	  	<h2>Our Mission</h2>
+          <table>
+            <tbody>
+            <tr>
+              <td><img src="assets/img/rubiks_cube.png" style="height:50px;"></td>
+              <td><p>We provide information and reviews of communication devices for sufferers of motor neurone disease.</p></td>
+            </tr>
+            <tr>
+              <td><img src="assets/img/rubiks_cube.png" style="height:50px;"></td>
+              <td><p>We give communications devices to people in need, funded by donations.</p></td>
+            </tr>
+            <tr>
+              <td><img src="assets/img/rubiks_cube.png" style="height:50px;"></td>
+              <td><p>Through reviews and comments we hope to get more people's stories and experiences about communicating with MND with the aim of sharing knowledge and helpful experience.</p></td>
+            </tr>
+            </tbody>
+          </table> 
 
-@main("Welcome to Play") {
-    <script type='text/javascript' src='@routes.Assets.at("javascripts/index.js")'></script>
+    	  	<button>MORE</button>
+    	  </div>
 
-    <p>Jaspal's Voice Website</p>
+    	  <!--Action boxes-->
+    	  <div class="action">
+    	  	<div>
+            <p>Contact</p>
+            <img src="assets/img/contact.png" style="height:80px">
+          </div>           
+          <div>
+            <p>Donate</p>
+            <img src="assets/img/heart.png" style="height:70px">
+          </div>
+    	  	<div>
+            <p style="padding-bottom:-10px">Volunteer</p>
+            <img src="assets/img/hand.png" style="height:90px">
+          </div>
+    	  </div>
+  	 </section>
+    </div>
+  <script>
 
-    <ul id="persons"></ul>
-
-    <form method="POST" action="@routes.Application.addPerson()">
-        <input type="text" name="name"/>
-        <button>Add Person</button>
-    </form>
-}
+  </script> 
+  </body>
+</html>
