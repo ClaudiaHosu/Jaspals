@@ -16,11 +16,13 @@ public class Application extends Controller {
         return ok(index.render());
     }
 
+    public  Result index2() {return ok(index2.render());}
+
     @Transactional
     public Result addPerson() {
         Person person = Form.form(Person.class).bindFromRequest().get();
         JPA.em().persist(person);
-        return redirect(routes.Application.index());
+        return redirect(routes.Application.index2());
     }
 
     @Transactional(readOnly = true)

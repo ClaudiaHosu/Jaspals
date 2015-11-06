@@ -4,6 +4,7 @@
 
 # Home page
 GET     /                           controllers.Application.index()
+GET     /index2                     controllers.Application.index2()
 POST    /person                     controllers.Application.addPerson()
 GET     /persons                    controllers.Application.getPersons()
 
