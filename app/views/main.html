@@ -1,0 +1,83 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Jaspal's Voice</title>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
+    <link href="@routes.Assets.at("css/styles.css")" type="text/css" rel="stylesheet">
+  </head> 
+  <body>
+    <div class="container">
+
+      <div id="header"> 
+        
+        <div class="logo area">
+          <div>
+            <img src="@routes.Assets.at("img/logo.png")" style="height:100px;">
+          </div>
+        </div>
+
+        <!--navigation--> 
+        <nav>
+          <ul class="nav">
+            <li>ABOUT US</li>
+            <li>STORIES</li>
+            <li>GET INVOLVED</li>
+            <li>FAQS</li>
+            <li id="donate">DONATE</li>
+          </ul>
+        </nav>
+      </div>
+
+
+
+
+      #{doLayout /}
+
+
+       <!--Action boxes-->
+      <section>
+        <div class="container-fluid">
+          <div class="action">
+
+            <div>
+              <div>
+                <img src="@routes.Assets.at("img/contact.png")" style="height:70px">
+              </div>
+              <p>Contact</p>
+            </div>
+
+            <div>
+              <div>
+                <img src="@routes.Assets.at("img/heart.png")" style="height:55px; padding-top:10px">
+              </div>
+              <p>Donate</p>
+            </div>
+            
+            <div>
+              <div>
+                <img src="@routes.Assets.at("img/hand.png")" style="height:65px">
+              </div>
+              <p style="padding-bottom:-10px">Volunteer</p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+       <!--FOOTER--> 
+      <div id="footer">
+        <div class="group">
+          <img class="logo" src="@routes.Assets.at("img/logo.png")">
+          <ul>
+            <li><img src="@routes.Assets.at("img/twitter-footer.png")"></li>
+            <li><img src="@routes.Assets.at("img/facebook-footer.png")"></li>
+            <li><img src="@routes.Assets.at("img/tumblr-footer.png")"></li>
+          </ul>
+          <p>Everybody needs a voice</p>
+        </div>
+      </div>
+
+  </div>
+  </body>
+</html>
