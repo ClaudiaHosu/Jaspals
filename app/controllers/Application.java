@@ -1,10 +1,9 @@
 package controllers;
 
-import play.*;
+import models.Product;
 import play.mvc.*;
 import play.db.jpa.*;
 import views.html.*;
-import models.Person;
 import play.data.Form;
 import java.util.List;
 
@@ -16,18 +15,20 @@ public class Application extends Controller {
         return ok(index.render());
     }
 
-    public  Result index2() {return ok(index2.render());}
+    public Result about() { return ok (about.render()); }
+
+    public  Result products() {return ok(products.render());}
 
     @Transactional
-    public Result addPerson() {
-        Person person = Form.form(Person.class).bindFromRequest().get();
-        JPA.em().persist(person);
-        return redirect(routes.Application.index2());
+    public Result addProduct() {
+        Product product = Form.form(Product.class).bindFromRequest().get();
+        JPA.em().persist(product);
+        return redirect(routes.Application.products());
     }
 
     @Transactional(readOnly = true)
-    public Result getPersons() {
-        List<Person> persons = (List<Person>) JPA.em().createQuery("select p from Person p").getResultList();
-        return ok(toJson(persons));
+    public Result getProducts() {
+        //List<Product> persons = (List<Product>) JPA.em().createQuery("select p from Person p").getResultList();
+        return ok();
     }
 }
